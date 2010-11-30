@@ -9,6 +9,8 @@ and active editors will be generated.  You must have the following:
  * MediaWiki 1.5+ (live)
  * MoinMoin 1.7.1+
 
+This is a http://moinmo.in/MediaWikiConverter
+
 
 License
 -------
