@@ -25,15 +25,15 @@ First generate the XML export from MediaWiki (the database must be up).
          > cd $MW/maintenance/
          > php dumpBackup.php --full --output=[file].gz
 
-where $MW is the base of your MediaWiki installation.  You may want to use
-additional filter arguments for the dumpBackup.php script; run it without
+where `$MW` is the base of your MediaWiki installation.  You may want to use
+additional filter arguments for the `dumpBackup.php` script; run it without
 arguments for more directions.
 
-Unzip the resultant output, then run mw2moin.py.
+Unzip the resultant output, then run `mw2moin.py`.
 
         > ./mw2moin.py out file
 
-which will generate the MoinMoin compatible directory at $PWD/out/
+which will generate the MoinMoin compatible directory at `$PWD/out/`
 
         > ./mw2moin.py -n out file
 
@@ -42,7 +42,7 @@ use a parser plugin to deal with it.
 
         > ./mw2moin.py -a $MW/images/ out file
 
-will copy attachments from $MW/images/ into the generated directory.
+will copy attachments from `$MW/images/` into the generated directory.
 
         > ./mw2moin.py -b http://example.com/wiki/ out file
 
@@ -53,7 +53,7 @@ Installation
 ------------
 
 After generating the directory, place it where your config .py will
-find it.  Be sure to change the front page to u'Main Page' in the
+find it.  Be sure to change the front page to `u'Main Page'` in the
 config.  If a local underlay and interwiki map are desired, copy or
 move them into the generated directory.
 
@@ -64,7 +64,7 @@ Known Bugs
 ----------
 
  * Table headers are not converted correctly all the time.
- * There is no analog for Image: pages since attachments in MoinMoin
+ * There is no analog for `Image:` pages since attachments in MoinMoin
    are not first class citizens.  They'll be moved over but likely
    orphaned.
  * Macros are not translated.
